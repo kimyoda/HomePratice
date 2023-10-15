@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 이 함수는 아래 함수의 축약버전이다.
+        
+        //let sum = function(a, b) {
+        //return a + b;
+        //};
+       // let sum = (a,b) => a + b;
+
+       // console.log(sum(1, 2));
+
+        /*
+        (a,b) => a +b는 인수 a와 b를 받는 함수이다.
+        (a,b) => a + b 실행하고 결과를 반환한다. 이때 return을 생략하고 진행한다.
+
+        */
+        let fn01_step1 = function (a) {
+    return function (b) {
+        return a + b;
+    }
+};
+
+
+    </script>
+</body>
+</html>

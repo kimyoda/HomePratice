@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+        }
+
+        .wrapper div + div {
+            border-top: 1px solid pink;
+        }
+
+        .contents-wrapper {
+            border: 2px solid rgb(240, 82, 82);
+            display: flex;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .contents-wrapper-left {
+            width: 30%; /* 사진의 너비를 조정합니다. */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contents-wrapper-left img {
+            max-width: 100%;
+            max-height: 100%; /* 사진 크기를 조정합니다. */
+            object-fit: contain;
+        }
+
+        .contents-wrapper-right {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-contents {
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .inner-contents h3,
+        .inner-contents p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .color-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .color-box .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 3px;
+            border: 2px solid;
+            border-width: 3px;
+        }
+
+        .color-box .orange {
+            background-color: orange;
+        }
+
+        .color-box .gray {
+            background-color: gray;
+        }
+
+        .color-box .red {
+            background-color: red;
+        }
+
+        .color-box .green {
+            background-color: green;
+        }
+
+        .color-box .blue {
+            background-color: blue;
+        }
+
+        .color-box .aqua {
+            background-color: aqua;
+        }
+
+        .color-box .yellow {
+            background-color: yellow;
+        }
+
+        .color-box .antiquewhite {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 첫 번째 상품 -->
+        <div class="contents-wrapper">
+            <div class="contents-wrapper-left">
+                <img src="../shop/23.jpg" alt="상품 이미지">
+            </div>
+            <div class="contents-wrapper-right">
+                <div class="inner-contents">
+                    <h3>모자</h3>
+                    <p>10000원</p>
+                    <div class="color-box">
+                        <div class="circle orange"></div>
+                        <div class="circle gray"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 두 번째 상품 -->
+        <div class="contents-wrapper">
+            <div class="contents-wrapper-left">
+                <img src="../shop/30.jpg" alt="상품 이미지">
+            </div>
+            <div class="contents-wrapper-right">
+                <div class="inner-contents">
+                    <h3>머리띠</h3>
+                    <p>17000원</p>
+                    <div class="color-box">
+                        <div class="circle red"></div>
+                        <div class="circle green"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 세 번째 상품 -->
+        <div class="contents-wrapper">
+            <div class="contents-wrapper-left">
+                <img src="../shop/14.jpg" alt="상품 이미지">
+            </div>
+            <div class="contents-wrapper-right">
+                <div class="inner-contents">
+                    <h3>신발</h3>
+                    <p>35000원</p>
+                    <div class="color-box">
+                        <div class="circle red"></div>
+                        <div class="circle aqua"></div>
+                        <div class="circle blue"></div>
+                        <div class="circle yellow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 네 번째 상품 -->
+        <div class="contents-wrapper">
+            <div class="contents-wrapper-left">
+                <img src="../shop/31.jpg" alt="상품 이미지">
+            </div>
+            <div class="contents-wrapper-right">
+                <div class="inner-contents">
+                    <h3>자켓</h3>
+                    <p>17000원</p>
+                    <div class="color-box">
+                        <div class="circle red"></div>
+                        <div class="circle antiquewhite"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body

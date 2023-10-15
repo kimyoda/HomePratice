@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "one"></div>
+    <script>
+        //위의 함수를 화살표 함수로 변경해보자
+        let f=()=> one.innerHTML+="Hello<br>";
+    
+        f();
+        
+        let add = (x,y) => one.innerHTML+= `${x}+${y}=${x+y}<br>`;
+        add(5, 6);
+        add(10, 20);
+    </script>
+</body>
+</html>

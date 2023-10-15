@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function forThreeNumber(n){
+            let result = 1;
+            let count = 0;
+            /*
+        
+            */
+            // while 문으로도 풀어보기
+            // 2칸으로 확실하게 세팅하기
+            // 알고리즘 효율적으로 풀이하는 방법
+            // 풀이보고 푸는건 나중에 다시 풀어봐야한다. 한 3~4일 뒤에.
+            // 코테는 효율성 30분 고민해보고 안풀리면 문제 해석
+            // 알고리즘을 먼저보기
+            // 답지 재풀이
+            // 연산자는 무조건 === 입니다.
+            // 지문자체를 잘봐야 한다. 풀이하기 전에 정리
+            // 해석 설명을 먼저보기
+            // includes 메서드에 정확한 이해가 필요
+            // 설명하는 학습법, 내가 뭘 알고 뭘 모르는 지 자기객관화가 필요하다
+            // Array에도 존재한다
+            // 취업 코테에서는 코딩 스타일도 본다
+            // es6 문법, 변수 빼는 연습
+            for (let i = 1; count < n; i++) {
+                // 추상화
+                if (i % 3 === 0 || String(i).includes("3")) {
+                    continue;    
+                } 
+                result = i;
+                count++;
+            }
+            console.log("결과:", result);
+            return result;
+
+        }
+        let n = 15;
+        forThreeNumber(n);
+    </script>
+</body>
+</html>

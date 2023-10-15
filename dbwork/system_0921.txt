@@ -1,0 +1,13 @@
+select username, account_status from dba_users;
+alter user scott account lock;
+create user c##scott IDENTIFIED by tiger;
+grant connect, resource to scott;
+alter user scott default tablespace users quota unlimited on users;
+
+create user c##angel IDENTIFIED by a1234;
+
+alter session set "_ORACLE_SCRIPT"=true;
+create user angel IDENTIFIED by a1234;
+
+Grant connect, resource to angel;
+alter user scott default tablespace users quota unlimited on users;
